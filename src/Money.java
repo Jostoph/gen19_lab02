@@ -27,6 +27,10 @@ class Money implements  Expression {
         return currency;
     }
 
+    public Money reduce(String to) {
+        return this;
+    }
+
     @Override
     public boolean equals(Object object) {
         Money money = (Money) object;
